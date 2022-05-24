@@ -58,3 +58,14 @@ print("The average of the changes in 'Profit/Losses' is: $" + str(res))
 print(f"The greatest Increase in Profits is: {month_increase} (${profit_increase})")
 
 print(f"The greatest Decrease in Losses is: {month_decrease} (${profit_decrease})")
+
+filepath = os.path.join('..', 'Analysis', 'PyBank_Results.txt')
+with open(filepath, "w") as text_file:
+    print('----------------------------', file=text_file)
+    print('Financial Analysis', file=text_file)
+    print('----------------------------', file=text_file)
+    print("Total number of months included in the dataset is: " + str(len(month)) + " months", file=text_file)
+    print("The net total amount of 'Profit/Losses' is: $ " + str(total_revenue), file=text_file)
+    print("The average of the changes in 'Profit/Losses' is: $" + str(res), file=text_file)
+    print(f"The greatest Increase in Profits is: {month_increase} (${profit_increase})", file=text_file)
+    print(f"The greatest Decrease in Losses is: {month_decrease} (${profit_decrease})", file=text_file)

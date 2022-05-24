@@ -1,0 +1,8 @@
+----------------------------
+Financial Analysis
+----------------------------
+Total number of months included in the dataset is: 86 months
+The net total amount of 'Profit/Losses' is: $ 38382578
+The average of the changes in 'Profit/Losses' is: $-2315.12
+The greatest Increase in Profits is: Feb-12 ($1926159)
+The greatest Decrease in Losses is: Sep-13 ($-2196167)
