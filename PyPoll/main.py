@@ -71,3 +71,28 @@ print(f"O'Tooley: {otooley_percent}% ({otooley_votes})" + "\n")
 print(f"-----------------------------------" + "\n")
 print(f"Winner: {winner}" + "\n")
 print(f"-----------------------------------")
+
+#Export the results as a text file
+filepath = os.path.join('..', 'PyPoll', 'Analysis', 'PyPoll_Results.txt')
+
+with open(filepath, "w") as text_file:
+
+    print("-----------------------------------", file=text_file)
+
+    print("Election Results", file=text_file)
+
+    print("-----------------------------------", file=text_file)
+
+    print("Khan: {khan_percent}% ({khan_votes})", file=text_file)
+
+    print("Correy: {correy_percent}% ({correy_votes})", file=text_file)
+
+    print("Li: {li_percent}% ({li_votes})", file=text_file)
+
+    print("O'Tooley: {otooley_percent}% ({otooley_votes})", file=text_file)
+
+    print("-----------------------------------", file=text_file)
+    
+    print("Winner: {winner}", file=text_file)
+
+    print(f"-----------------------------------", file=text_file)
